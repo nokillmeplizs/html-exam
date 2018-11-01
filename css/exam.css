@@ -33,7 +33,7 @@ body{
 
 article{
     width: 206px;
-    margin: 0 24px 25px 0;
+    margin: 0 5px 5px 0;
 }
 #newsletter{
     overflow: hidden;
@@ -280,9 +280,9 @@ footer{
     display: flex;
     flex-direction: column;
 }
-#slide{
-    background-image: url("../images/slider/Lw6OVcMbCqI.jpg");
-}
+/*#slide{*/
+    /*background-image: url("../images/slider/Lw6OVcMbCqI.jpg");*/
+/*}*/
 
 #nav{
     background: #EFF8F7;
@@ -312,6 +312,12 @@ footer{
 #nav li{
     padding: 10px;
    }
+#slide > img{
+    width: 100%;
+}
+#recent{
+    flex-wrap: wrap;
+}
 
 @media screen and (max-width: 990px) {
     body {
@@ -362,6 +368,9 @@ footer{
     nav {
         padding: 0;
     }
+    #nav{
+        height: 30px;
+    }
     .lia {
         display: inline;
         padding: 35px 0 0 0;
@@ -393,9 +402,87 @@ footer{
 
 @media screen and (max-width: 768px) {
 
+    .tastemakers, .blog, .vendors, .contribute,.about_us  {
+        background:none;
+        padding: 0;
+    }
+    .main{
+        width: 456px;
+    }
+    #recent {
+        width: 456px;
+    }
+    #slide {
+        width: 456px;
+    }
+    body{
+        width: 456px;
+        margin: 0 auto;
+    }
+    nav a{
+        padding: 0;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    nav li{
+        margin: 0;
+    }
+    .lowsizemenu{
+        padding: 0;
+    }
+    #nav{
+        display: none;
+    }
+    #slider, #slide{
+
+        height: 310px;
+
+    }
+    #newsletter{
+        flex-direction: column;
+        width: 456px;
+        margin-top: 0;
+    }
+    article img{
+        width: 200px;
+    }
 }
 @media screen and (max-width: 480px) {
+body{
+    width: 320px;
+    }
+    aside{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+    article img{
+        width: 256px;
+    }
+    #recent{
+        width: 240px;
+        margin-left: 20px;
+    }
+    .main{
+    width:320px;
+    }
+    .foot{
+        font-size: 9px;
+    }
+    #newsletter{
+        width: 316px;
+    }
+    article img{
+        width: 248px;
+    }
+    #content{
+        width: 312px;
+    }
+    #slider, #slide{
 
+        width: 300px;
+
+    }
 }
 
 
